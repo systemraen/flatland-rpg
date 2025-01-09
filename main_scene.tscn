@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2t3g3glxguhc"]
+
+[ext_resource type="PackedScene" uid="uid://bkkhqiqxkoeys" path="res://user_interface.tscn" id="1_upa00"]
+[ext_resource type="Script" path="res://player.gd" id="2_1jqbw"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="UserInterface" parent="." instance=ExtResource("1_upa00")]
+
+[node name="Player" type="Polygon2D" parent="."]
+position = Vector2(448, 293)
+scale = Vector2(0.697368, 0.534247)
+polygon = PackedVector2Array(475, 199, 501, 251, 491, 316, 409, 320, 349, 289, 384, 262, 390, 226, 418, 174)
+script = ExtResource("2_1jqbw")
